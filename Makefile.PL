@@ -9,6 +9,7 @@ WriteMakefile(
       'Mojo' => 0
 
     }, # e.g., Module::Name => 1.1
+    clean => { FILES => 'Mojolicious-Plugin-ServerSession-*' },
     LICENSE => 'perl_5',
     (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
         'meta-spec' => { version => 2 },
